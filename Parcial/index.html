@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/index.js" type="module"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+
+    <a href="#"><img src="./images/logo.png" alt="Logo" width="100px"></a>
+    <nav>
+      <ul>
+        <li><a href="#">Nosotras</a></li>
+        <li><a href="#">Anuncios</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <p>
+  <h1>Administración</h1>
+  <img src="./images/header.jpg" alt="Banner" width="100%">
+  </p>
+
+  <main>
+
+    <section class="conteiner">
+
+      <form>
+        <fieldset>
+          <legend>Información del anuncio</legend>
+
+          <ul class="flex-outer">
+
+            <li>
+              <input class="deshabilitar" type="number" name="id" id="txtId">
+            </li>
+
+            <li>
+              <label for="txtTitulo">Titulo</label>
+              &nbsp;
+              <input type="text" name="titulo" id="txtTitulo" required>
+            </li>
+
+            <li>
+              <label>Transacción</label>
+              &nbsp;
+              <ul class="flex-inner">
+
+                <li>
+                  <label for="rdoV">
+                    <input type="radio" name="transaccion" id="rdoV" value="Venta" checked>Venta
+                  </label>
+                  &nbsp;
+                  <label for="rdoV">
+                    <input type="radio" name="transaccion" id="rdoA" value="Alquiler">Alquiler
+                  </label>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <label for="txtDescripcion">Descripcion</label>
+              &nbsp;
+              <input type="text" name="descripcion" id="txtDescripcion" required>
+            </li>
+
+            <li>
+              <label for="numbPrecio">Precio</label>
+              &nbsp;
+              <input type="number" name="precio" id="numbPrecio" required>
+            </li>
+
+            <li>
+              <label for="numbPuertas"><img src="./images/puertas.ico" alt="" width="20px"></label>
+              <input type="number" name="puertas" id="numbPuertas" placeholder="Puertas" required>
+
+              <label for="numbPotencia"><img src="./images/potencia.ico" alt="" width="20px"></label>
+              <input type="number" name="descripcion" id="numbPotencia"  placeholder="Potencia" required>
+            </li>
+
+            <li>
+              <label for="rdo1">
+                <input type="radio" name="numKil" id="rdo1" value="20.000" checked>20.000
+              </label>
+              &nbsp;
+              <label for="rdo2">
+                <input type="radio" name="numKil" id="rdo2" value="40.000">40.000
+              </label>
+              &nbsp;
+              <label for="rdo3">
+                <input type="radio" name="numKil" id="rdo3" value="60.000">60.000
+              </label>&nbsp;
+
+              <label for="numbKMs"><img src="./images/kms.ico" alt="" width="20px"></label>
+              <input type="number" name="kms" id="numbKMs"   placeholder="Kilómetros" disabled=true required>
+
+            </li>
+
+            <li>
+              <button id="btnGuardar" class="botonVerde"><img src="./images/guardar.ico" alt=""
+                  width="10px"></i>Guardar</button>
+              <button class="deshabilitar" id="btnBaja">Baja Anuncio</button>
+              <button class="deshabilitar" id="btnModificar">Modificar Anuncio</button>
+              <button id="btnCancelar">Cancelar</button>
+              <button id="btnLimpiarTabla">Limpiar tabla</button>
+            </li>
+
+          </ul>
+
+        </fieldset>
+      </form>
+
+    </section>
+
+    <section class="conteiner">
+      <div id="divTabla"></div>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#">Nosotras</a></li>
+        <li><a href="#">Anuncios</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <p>Todos los derechos reservados 2020</p>
+  </footer>
+
+</body>
+
+</html>
